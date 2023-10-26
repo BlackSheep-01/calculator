@@ -41,7 +41,7 @@ function resetScreen(){ //clear the currentOperationScreen
 }
 
 function setOperation(operator){ 
-    if(currentOperator!==null) //everytime after 1st time
+    if(currentOperator!==null) 
         evaluate();
     firstOperand= currentOperationScreen.innerText;
     currentOperator= operator;  //1st time
