@@ -1,4 +1,13 @@
-# calculator
+# Summary:
+This is a Calculator tool build as a part of the Odin Project Curriculum. 
+Features:
+* It can perform all basic mathematical operations with integer and decimal numbers.
+* Keyboard support for all the available buttons are enabled.
 
-1. This doesn't follow BODMAS rule. Instead, it keeps evaluating an expression from left to right in pairs, each time the user inputs a value.
-2. Keyboard support is not enabled yet, might add later.
+# Live Preview: [Calculator](https://bluelordd.github.io/calculator/)
+
+# Languages and technolgies used:
+* HTML/CSS/Javascript
+* VS Code
+* Linux terminal
+* Chrome developer tools
