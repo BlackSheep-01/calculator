@@ -4,7 +4,7 @@ Features:
 * It can perform all basic mathematical operations with integer and decimal numbers.
 * Keyboard support for all the available buttons are enabled.
 
-# Live Preview: [Calculator](https://bluelordd.github.io/calculator/)
+# Live Preview: [Calculator](https://blacksheep-01.github.io/calculator/)
 
 # Languages and technolgies used:
 * HTML/CSS/Javascript
