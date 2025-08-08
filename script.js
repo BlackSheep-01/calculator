@@ -33,13 +33,19 @@ dotButton.addEventListener("click",appendDot);
 function appendNumber(number){
     if(currentOperationScreen.innerText==="" || shouldResetScreen)
         resetScreen();
-
-    let currentNumber = parseFloat(currentOperationScreen.innerText);
-    const largeNumberThreshold = 1e15; 
-    if (Math.abs(currentNumber) >= largeNumberThreshold) {
+    let currentText = currentOperationScreen.innerText;
+    
+    if (currentText === "0" && number === "0") //prevent multiple 0s on screen
+        return;  
+    if (currentText === "0" && number !== ".") {   //prevent leading 0 followed by number
+        currentOperationScreen.innerText = number;
+        return;
+    }
+    let simulatedNumber = currentText + number;
+    if (parseFloat(simulatedNumber) >= 1e15) {     //prevent very large numbers
         currentOperationScreen.innerText = "Infinity";
         return;
-    }  
+    }
     
     currentOperationScreen.innerText += number;
 }
